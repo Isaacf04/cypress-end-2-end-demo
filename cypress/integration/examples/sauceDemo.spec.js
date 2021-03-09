@@ -54,16 +54,16 @@ context('End 2 End - Sauce Demo', () => {
     cy.get(checkout.checkOutWrapper).should('be.visible')
   })
 
-  it('Enter checkout info', () => {
-    cy.get(checkout.firstName).type('Automated')
-    cy.get(checkout.lastName).type('Automated')
-    cy.get(checkout.zipCode).type('33122')
-    cy.get(checkout.cartButton).click()
-  })
+//   it('Enter checkout info', () => {
+//     cy.get(checkout.firstName).type('Automated')
+//     cy.get(checkout.lastName).type('Automated')
+//     cy.get(checkout.zipCode).type('33122')
+//     cy.get(checkout.cartButton).click()
+//   })
 
-  it('Finish order', () => {
-    cy.get(checkout.cartButton).click()
-    cy.get(checkout.checkOutCompleteImage).should('be.visible')
-  })
+//   it('Finish order', () => {
+//     cy.get(checkout.cartButton).click()
+//     cy.get(checkout.checkOutCompleteImage).should('be.visible')
+//   })
 
 })
